@@ -7,7 +7,7 @@ export default function App() {
   const [showNFT, setShowNFT] = useState(false);
   const [copied, setCopied] = useState(false);
   
-  const contractAddress = "0x1234567890abcdef1234567890abcdef12345678";
+  const contractAddress = "AM2a13WQJmfWxbR1TDxhiQh5V1T2CBsQwcyHrYdRGkwN";
 
   useEffect(() => {
     // Start GIF animation after 1.5 seconds

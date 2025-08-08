@@ -73,8 +73,8 @@ export default function App() {
       {/* Contract Address Section */}
       <motion.div 
         className="absolute top-4 right-4 flex items-center gap-1"
-        initial={{ opacity: 0, y: -10 }}
-        animate={showNFT ? { opacity: 1, y: 0 } : { opacity: 0, y: -10 }}
+        initial={{ opacity: 0 }}
+        animate={showNFT ? { opacity: 1 } : { opacity: 0 }}
         transition={{ duration: 1, ease: 'easeOut' }}
       >
         <button

@@ -108,6 +108,23 @@ export default function App() {
         animate={showNFT ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }}
         transition={{ duration: 1, ease: 'easeOut' }}
       />
+
+      {/* X.com link in bottom right */}
+      <motion.a
+        href="https://x.com/nofunctiontoken"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="absolute bottom-4 right-4"
+        initial={{ opacity: 0 }}
+        animate={showNFT ? { opacity: 1 } : { opacity: 0 }}
+        transition={{ duration: 1, ease: 'easeOut' }}
+      >
+        <img
+          src="/x.png"
+          alt="X"
+          className="w-8 h-8 hover:opacity-80 transition-opacity"
+        />
+      </motion.a>
     </div>
   );
 }
